@@ -16,7 +16,7 @@ function filterByRating(
 
 
 function concatenateArrays<T>(...arrays: T[][]): T[] {
-  return arrays.reduce((acc, curr) => acc.concat(curr), []);
+  return arrays.reduce((combinedArray, newArray) => combinedArray.concat(newArray), []);
 }
 
 
